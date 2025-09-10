@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Página 1 - Postres</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff0f5;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      color: #d63384;
+      margin-top: 20px;
+    }
+
+    .contenedor {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .card {
+      background-color: #ffe6f0;
+      width: 250px;
+      padding: 15px;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .nombre {
+      font-size: 18px;
+      color: #b3005e;
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+
+    .precio {
+      font-size: 16px;
+      color: #333;
+      font-weight: bold;
+    }
+
+    a {
+      display: inline-block;
+      margin: 20px;
+      padding: 10px 15px;
+      background-color: #ff69b4;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s;
+    }
+
+    a:hover {
+      background-color: #ff3d94;
+    }
+  </style>
+</head>
+<body>
+  <h1>Postres y Precios</h1>
+  <div class="contenedor">
+    <div class="card">
+      <img src="pastel.jpg">
+      <div class="nombre">Pastel de Chocolate</div>
+      <div class="precio">$120 MXN</div>
+    </div>
+
+    <div class="card">
+      <img src="2.jpg">
+      <div class="nombre">Pay de Fresa</div>
+      <div class="precio">$90 MXN</div>
+    </div>
+
+    <div class="card">
+      <img src="Chees.png">
+      <div class="nombre">Cheesecake</div>
+      <div class="precio">$110 MXN</div>
+    </div>
+
+    <div class="card">
+      <img src="cup.jpg">
+      <div class="nombre">Cupcakes</div>
+      <div class="precio">$35 MXN c/u</div>
+    </div>
+  </div>
+
+  <a href="index.html">Volver al Menú</a>
+</body>
+</html>

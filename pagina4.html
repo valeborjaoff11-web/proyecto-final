@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Página 4 - Redes Sociales</title>
+
+  <!-- Fuente llamativa de Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fff0f5;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      background-image: url('https://png.pngtree.com/png-clipart/20230828/original/pngtree-seamless-pattern-of-sweet-desserts-vector-png-image_9380848.png');
+      background-size: 250px;
+    }
+
+    /* Título principal */
+    h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 40px;
+      margin-top: 25px;
+      background: linear-gradient(90deg, #ff3399, #ff66cc, #ff99cc);
+      -webkit-background-clip: text;
+      color: transparent;
+      text-shadow: 2px 2px 6px rgba(255, 105, 180, 0.4);
+    }
+
+    /* Subtítulo */
+    p {
+      font-size: 18px;
+      color: #b3005e;
+      margin-bottom: 25px;
+      font-weight: 600;
+    }
+
+    /* Contenedor de redes */
+    .redes {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 25px;
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+
+    /* Tarjeta de cada red social */
+    .red {
+      width: 130px;
+      padding: 15px;
+      background-color: rgba(255, 240, 245, 0.95);
+      border-radius: 20px;
+      box-shadow: 0 5px 15px rgba(255, 105, 180, 0.5);
+      border: 2px solid #ff99cc;
+      transition: transform 0.3s, box-shadow 0.3s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Efecto hover con brillo */
+    .red::before {
+      content: "";
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: linear-gradient(120deg, rgba(255,255,255,0.5) 0%, transparent 60%);
+      transform: rotate(25deg);
+      transition: 0.6s;
+    }
+
+    .red:hover::before {
+      left: 100%;
+    }
+
+    .red:hover {
+      transform: scale(1.1);
+      box-shadow: 0 8px 18px rgba(255, 105, 180, 0.7);
+    }
+
+    /* Iconos de redes */
+    .red img {
+      width: 65px;
+      height: 65px;
+      margin-bottom: 10px;
+      transition: transform 0.3s;
+    }
+
+    .red:hover img {
+      transform: rotate(10deg) scale(1.1);
+    }
+
+    /* Texto debajo de los iconos */
+    .red a {
+      display: block;
+      font-size: 16px;
+      font-weight: bold;
+      color: #ff3399;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .red a:hover {
+      color: #b3005e;
+    }
+
+    /* Botón para volver */
+    a.volver {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 22px;
+      background-color: #ff66b2;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 15px;
+      box-shadow: 0 5px 12px rgba(255, 105, 180, 0.4);
+      transition: background-color 0.3s, transform 0.2s;
+      font-size: 18px;
+    }
+
+    a.volver:hover {
+      background-color: #ff3399;
+      transform: scale(1.08);
+    }
+  </style>
+</head>
+<body>
+  <h1>🍩 ¡Síguenos en Nuestras Redes Sociales! 🎂</h1>
+  <p>Conéctate con <b>Dulces Delicias</b> y no te pierdas nuestras nuevas creaciones.</p>
+
+  <div class="redes">
+    <div class="red">
+      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png" alt="Facebook">
+      <a href="https://facebook.com" target="_blank">Facebook</a>
+    </div>
+
+    <div class="red">
+      <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram">
+      <a href="https://instagram.com" target="_blank">Instagram</a>
+    </div>
+
+    <div class="red">
+      <img src="https://cdn-icons-png.flaticon.com/512/3046/3046122.png" alt="TikTok">
+      <a href="https://tiktok.com" target="_blank">TikTok</a>
+    </div>
+
+    <div class="red">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+      <a href="https://wa.me/522221234567" target="_blank">WhatsApp</a>
+    </div>
+
+    <div class="red">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter">
+      <a href="https://twitter.com" target="_blank">Twitter</a>
+    </div>
+  </div>
+
+  <a href="index.html" class="volver">⬅️ Volver al Menú</a>
+</body>
+</html>
